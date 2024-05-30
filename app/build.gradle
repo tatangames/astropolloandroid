@@ -1,0 +1,119 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.tatanstudios.astropollocliente'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.tatanstudios.astropollocliente"
+        minSdk 24
+        targetSdk 33
+        versionCode 7
+        versionName "1.0.7"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+
+
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0' //rxjava
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0' //rxjava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0' //rxjava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.2' //rxjava
+
+
+    // servicios de google maps
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.maps.android:android-maps-utils:3.4.0'
+    implementation group: 'com.google.android.libraries.places', name: 'places', version: '3.1.0'
+
+
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    // imagen circular
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+// recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+
+    // cardview
+    implementation 'androidx.cardview:cardview:1.0.0' // tarjeta
+
+    // estilo para toast mensaje
+    implementation 'com.github.GrenderG:Toasty:1.5.2'
+
+
+    // refresh de pantalla deslizar hacia abajo
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+
+    // manejador de imagenes
+    implementation 'com.github.bumptech.glide:glide:4.13.2' // glide imagenes
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2' // glide soporte
+
+    // manejador de permisos
+    implementation 'com.karumi:dexter:6.2.3' // facilita implementar los permisos
+
+    // alertas mensaje
+
+
+    implementation 'com.github.TutorialsAndroid:KAlertDialog:v7.0.19'
+
+
+    // manejador de varias lineas de productos
+    implementation 'com.github.luizgrp:SectionedRecyclerViewAdapter:v3.2.0'
+    // estilo toggle
+    implementation 'com.github.angads25:toggle:1.1.0'
+    
+    implementation 'com.airbnb.android:lottie:3.4.1'
+
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+
+    // banner slider
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+
+    implementation 'com.github.travijuu:numberpicker:1.0.7'
+
+
+
+    // notificaciones one signal
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+
+    // para tener una lista de dispositivos con sus nombres
+
+    implementation 'com.jaredrummler:android-device-names:2.1.1'
+
+
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

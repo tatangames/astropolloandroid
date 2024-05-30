@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_inicio"
+        android:title="@string/menu"
+        android:iconTint="@color/colorPrimary"
+        android:icon="@drawable/icono_comida"/>
+
+
+    <item
+        android:title=""/>
+
+
+    <item
+        android:id="@+id/nav_historial"
+        android:title="@string/ordenes"
+        android:iconTint="@color/colorPrimary"
+        android:icon="@drawable/icono_libro"/>
+
+
+</menu>
+
