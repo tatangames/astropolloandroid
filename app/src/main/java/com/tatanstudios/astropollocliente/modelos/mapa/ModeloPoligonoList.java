@@ -14,6 +14,14 @@ public class ModeloPoligonoList {
     @SerializedName("poligono")
     public List<ModeloPoligono> poligono = null;
 
+
+    @SerializedName("apikey")
+    public String apikey;
+
+    public String getApikey() {
+        return apikey;
+    }
+
     public List<ModeloDireccionMapa> getDireccion() {
         return direccion;
     }
